@@ -1,17 +1,17 @@
 # Logica-de-Programacao
 Tudo da minha matéria de Logica de Programação em Python da minha faculdade de engenharia de Software
-🐍 Lógica de Programação em Python
+Lógica de Programação em Python
 Bem-vindo ao repositório de Lógica de Programação em Python!
 Aqui você encontrará códigos desenvolvidos em Python e imagens de exercícios para praticar e resolver.
 
-📂 Estrutura do Repositório
+Estrutura do Repositório
 Códigos Python: Exemplos e soluções de exercícios de lógica.
 
 Imagens de Exercícios: Enunciados visuais para praticar e testar seus conhecimentos.
 
 Exemplos Resolvidos: Casos práticos com explicações detalhadas.
 
-🚀 Objetivo
+Objetivo
 O objetivo deste repositório é ajudar iniciantes e estudantes a:
 
 Aprender lógica de forma prática.
@@ -20,7 +20,7 @@ Praticar Python com exercícios variados.
 
 Desenvolver raciocínio para resolver problemas computacionais.
 
-🛠️ Tecnologias Utilizadas
+Tecnologias Utilizadas
 Python 3.x
 
 Editor de código de sua preferência (VS Code, PyCharm, etc.)
