@@ -1,11 +1,11 @@
 from math import hypot
 
-co = float(input('Comprimento do cateto oposto: '))
+co = float(input('Comprimento do cateto oposto: ')) #  Lendo comprimento dos catetos 
 ca = float(input('Comprimento do cateto adjacente: '))
 
-hi = hypot(ca, co)
+hi = hypot(ca, co) # Calculando o valor da hipotenusa
 
-print('A hipotenusa vai medir {:.2f}'.format(hi))
+print('A hipotenusa vai medir {:.2f}'.format(hi)) # Saida do valor da hipotenusa
 
 '''from math import sqrt
 

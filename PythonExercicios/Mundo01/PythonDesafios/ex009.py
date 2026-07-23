@@ -1,6 +1,6 @@
-n = int(input('Digite um numero para ver a tabuada: '))
+n = int(input('Digite um numero para ver a tabuada: ')) # lendo um numero
 
-print('_'*12)
+print('_'*12)                               # Tabuada do numero escolhido 
 print('{} x {:2} = {}'.format(n, 1, n*1))
 print('{} x {:2} = {}'.format(n, 2, n*2))
 print('{} x {:2} = {}'.format(n, 3, n*3))
