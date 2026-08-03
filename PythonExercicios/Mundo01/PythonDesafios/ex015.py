@@ -1,6 +1,8 @@
-dias = int(input('Quantos dias alugados? ')) # Lendo o numero de dias e distancia
-km = int(input('Quantos KM rodados? '))
+# Exercício 015: calcula o valor a pagar por um aluguel de carro
 
-pagar = (dias * 60) + (km * 0.15) # Calculo do valor a pagar
+dias = int(input('Quantos dias alugados? '))  # lê quantos dias o carro foi alugado
+km = int(input('Quantos KM rodados? '))       # lê quantos km foram rodados
 
-print(f'O valor a pagar é de R${pagar:.2f}')  # Saida do valor a pagar
+pagar = (dias * 60) + (km * 0.15)  # cada dia custa R$60 e cada km rodado custa R$0,15
+
+print(f'O valor a pagar é de R${pagar:.2f}')

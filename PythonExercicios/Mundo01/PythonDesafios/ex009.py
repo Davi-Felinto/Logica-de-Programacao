@@ -1,6 +1,9 @@
-n = int(input('Digite um numero para ver a tabuada: ')) # lendo um numero
+# Exercício 009: mostra a tabuada de um número (1 a 10)
 
-print('_'*12)                               # Tabuada do numero escolhido 
+n = int(input('Digite um numero para ver a tabuada: '))  # lê o número que terá a tabuada exibida
+
+print('_'*12)  # linha decorativa repetindo '_' 12 vezes
+# {:2} reserva 2 espaços de largura para alinhar os números do multiplicador
 print('{} x {:2} = {}'.format(n, 1, n*1))
 print('{} x {:2} = {}'.format(n, 2, n*2))
 print('{} x {:2} = {}'.format(n, 3, n*3))

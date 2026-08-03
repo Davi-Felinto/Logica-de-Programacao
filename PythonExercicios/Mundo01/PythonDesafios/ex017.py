@@ -1,12 +1,15 @@
-from math import hypot
+# Exercício 017: calcula a hipotenusa de um triângulo retângulo
 
-co = float(input('Comprimento do cateto oposto: ')) #  Lendo comprimento dos catetos 
-ca = float(input('Comprimento do cateto adjacente: '))
+from math import hypot  # hypot(a, b) calcula a hipotenusa a partir dos dois catetos
 
-hi = hypot(ca, co) # Calculando o valor da hipotenusa
+co = float(input('Comprimento do cateto oposto: '))     # lê o cateto oposto
+ca = float(input('Comprimento do cateto adjacente: '))   # lê o cateto adjacente
 
-print('A hipotenusa vai medir {:.2f}'.format(hi)) # Saida do valor da hipotenusa
+hi = hypot(ca, co)  # calcula a hipotenusa: raiz(ca² + co²)
 
+print('A hipotenusa vai medir {:.2f}'.format(hi))
+
+# Forma alternativa (comentada) usando sqrt para calcular manualmente
 '''from math import sqrt
 
 co = float(input('Comprimento do cateto oposto: '))

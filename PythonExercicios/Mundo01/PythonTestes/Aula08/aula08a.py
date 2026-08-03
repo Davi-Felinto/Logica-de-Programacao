@@ -1,7 +1,9 @@
-from math import sqrt, floor
+# Aula 08a: calcula a raiz quadrada de um número e arredonda para baixo
 
-num = int(input('Digite um numero:'))
+from math import sqrt, floor  # sqrt calcula raiz quadrada, floor arredonda para baixo (piso)
 
-raiz = sqrt(num)
+num = int(input('Digite um numero:'))  # lê um número inteiro
 
-print(f'A raiz de {num} e é igual a {floor(raiz)}')
+raiz = sqrt(num)  # calcula a raiz quadrada (resultado decimal)
+
+print(f'A raiz de {num} e é igual a {floor(raiz)}')  # floor() descarta as casas decimais arredondando para baixo

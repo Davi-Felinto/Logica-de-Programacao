@@ -1,5 +1,7 @@
-city = input('Em que cidade você nasceu? ').strip().split() # Lendo cidade fatiando e removendo os epaços antes e dps
+# Exercício 024: verifica se a primeira palavra da cidade contém "santo"
 
-pri_palavra = city[0] # Atribuindo o primeiro nome da cidade a pri_palvra
+city = input('Em que cidade você nasceu? ').strip().split()  # lê, remove espaços das pontas e separa em lista de palavras
 
-print('santo' in pri_palavra.lower()) # Saida da Verificação de se 'santos' esta em pri_palvra 
+pri_palavra = city[0]  # pega a primeira palavra da cidade (ex: 'Santo' em 'Santo André')
+
+print('santo' in pri_palavra.lower())  # verifica se a substring 'santo' está contida na palavra (em minúsculas)
