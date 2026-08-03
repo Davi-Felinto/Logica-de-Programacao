@@ -8,7 +8,7 @@ cont_mulher_menos20 = 0
 for i in range(1, 5):
     print('-'*5, f'{i}ª PESSOA', '-'*5)
     
-    nome = input('Nome: ')
+    nome = input('Nome: ').strip()
     if not nome:
         nomes = ['Davi', 'Pedro', 'João', 'Ana', 'Hallana', 'Bia']
         nome = choice(nomes)
@@ -21,7 +21,7 @@ for i in range(1, 5):
         stdout.write("\033[F") 
         print(f'Idade: {idade}')
 
-    sexo = input('Sexo [M/F]: ')
+    sexo = input('Sexo [M/F]: ').strip()
     if not sexo:
         if nome == 'Davi' or nome == 'Pedro' or nome == 'João':
             sexo = 'M'
