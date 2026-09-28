@@ -1,4 +1,6 @@
 from pessoa import Pessoa
+from rich import print, inspect
+
 
 class Funcionario(Pessoa):
       '''classe Funcionario que representa um funcionário''' 
@@ -8,6 +10,6 @@ class Funcionario(Pessoa):
         self.cargo:str = cargo # atribui o cargo do funcionário
         self.setor:str = setor # atribui o setor do funcionário
 
-      def bater_ponto(self):
+      def baterPonto(self):
         '''método para bater ponto do funcionário'''
         print(f'Funcionário [bold white]{self.nome}[/] bateu o ponto...')

@@ -1,4 +1,6 @@
 from pessoa import Pessoa
+from rich import print, inspect
+
 
 class Aluno(Pessoa):
     '''classe Aluno que representa um aluno'''
@@ -8,6 +10,6 @@ class Aluno(Pessoa):
         self.curso = curso  # atribui o curso do aluno
         self.turma = turma # atribui a turma do aluno
 
-    def fazer_matricula(self):
+    def fazerMatricula(self):
         '''método para fazer matrícula do aluno'''
         print(f'[bold white]{self.nome}[/] está fazendo matrícula...')

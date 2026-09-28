@@ -5,6 +5,6 @@ class Pessoa:
         self.nome:str = nome # atribui o nome da pessoa
         self.idade:int = idade # atribui a idade da pessoa
 
-    def fazer_aniversario(self):
+    def fazerAniversario(self):
         '''método para fazer aniversário da pessoa'''
         self.idade += 1 # aumenta a idade em 1

@@ -8,7 +8,7 @@ class Pessoa:
         self.nome:str = nome # atribui o nome da pessoa
         self.idade:int = idade # atribui a idade da pessoa
 
-    def fazer_aniversario(self):
+    def fazerAniversario(self):
         '''método para fazer aniversário da pessoa'''
         self.idade += 1 # aumenta a idade em 1
 
@@ -21,7 +21,7 @@ class Aluno(Pessoa):
         self.curso = curso  # atribui o curso do aluno
         self.turma = turma # atribui a turma do aluno
 
-    def fazer_matricula(self):
+    def fazerMatricula(self):
         '''método para fazer matrícula do aluno'''
         print(f'[bold white]{self.nome}[/] está fazendo matrícula...')
  
@@ -33,7 +33,7 @@ class Professor(Pessoa):
         self.especialidade:str = especialidade # atribui a especialidade do professor
         self.nivel:str = nivel # atribui o nível do professor
 
-    def dar_aula(self):
+    def darAula(self):
         '''método para dar aula do professor'''
         print(f'Professor [bold white]{self.nome}[/] está dando aula...')
 
@@ -46,14 +46,14 @@ class Funcionario(Pessoa):
         self.cargo:str = cargo # atribui o cargo do funcionário
         self.setor:str = setor # atribui o setor do funcionário
 
-      def bater_ponto(self):
+      def baterPonto(self):
         '''método para bater ponto do funcionário'''
         print(f'Funcionário [bold white]{self.nome}[/] bateu o ponto...')
 
 aluno1 = Aluno('João', 20, 'Engenharia', 'A')
-aluno1.fazer_matricula() # chama o método fazer_matricula da classe Aluno
+aluno1.fazerMatricula() # chama o método fazerMatricula da classe Aluno
 inspect(aluno1, methods=True)
 
 professor1 = Professor('Maria', 35, 'Matemática', 'Doutorado')
-professor1.dar_aula() # chama o método dar_aula da classe Professor
+professor1.darAula() # chama o método darAula da classe Professor
 inspect(professor1, methods=True)

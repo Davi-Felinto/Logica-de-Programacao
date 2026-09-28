@@ -5,11 +5,11 @@ from funcionario import Funcionario
 
 def main():
     aluno1 = Aluno('Davi Felinto', 19, 'Eng. de Software', 'ESa')
-    aluno1.fazer_matricula() # chama o método fazer_matricula da classe Aluno
+    aluno1.fazerMatricula() # chama o método fazerMatricula da classe Aluno
     inspect(aluno1, methods=True)
 
     professor1 = Professor('Maria', 35, 'Matemática', 'Doutorado')
-    professor1.dar_aula() # chama o método dar_aula da classe Professor
+    professor1.darAula() # chama o método darAula da classe Professor
     inspect(professor1, methods=True)
 
 main() if __name__== '__main__' else None

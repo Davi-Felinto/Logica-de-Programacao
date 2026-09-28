@@ -1,7 +1,7 @@
-from rich import print
+from rich import print, inspect
+from abc import ABC, abstractmethod # Abstract Base Classes
 
-
-class Pessoa:
+class Pessoa(ABC):
     '''classe Pessoa que representa uma pessoa'''
     def __init__(self, nome:str = '', idade:int = 0):
         '''construtor da classe Pessoa'''
@@ -11,6 +11,10 @@ class Pessoa:
     def fazerAniversario(self):
         '''método para fazer aniversário da pessoa'''
         self.idade += 1 # aumenta a idade em 1
+
+    @abstractmethod
+    def estudar(self):
+        pass
 
 
 class Aluno(Pessoa):
@@ -24,6 +28,9 @@ class Aluno(Pessoa):
     def fazerMatricula(self):
         '''método para fazer matrícula do aluno'''
         print(f'[bold white]{self.nome}[/] está fazendo matrícula...')
+
+    def estudar(self):
+        print(f'{self.nome} está estudadndo {self.curso} na turma {self.turma}')
  
 class Professor(Pessoa):
     '''classe Professor que representa um professor'''
@@ -37,15 +44,21 @@ class Professor(Pessoa):
         '''método para dar aula do professor'''
         print(f'Professor [bold white]{self.nome}[/] está dando aula...')
 
+    def estudar(self):
+        print(f'{self.nome} é especialista em {self.especialidade} no {self.nivel}')
+
 
 class Funcionario(Pessoa):
-      '''classe Funcionario que representa um funcionário''' 
-      def __init__(self, nome, idade, cargo, setor):
-        '''construtor da classe Funcionario'''
-        super().__init__(nome, idade) # chama o construtor da classe Pessoa
-        self.cargo:str = cargo # atribui o cargo do funcionário
-        self.setor:str = setor # atribui o setor do funcionário
+    '''classe Funcionario que representa um funcionário''' 
+    def __init__(self, nome, idade, cargo, setor):
+      '''construtor da classe Funcionario'''
+      super().__init__(nome, idade) # chama o construtor da classe Pessoa
+      self.cargo:str = cargo # atribui o cargo do funcionário
+      self.setor:str = setor # atribui o setor do funcionário
 
-      def baterPonto(self):
-        '''método para bater ponto do funcionário'''
-        print(f'Funcionário [bold white]{self.nome}[/] bateu o ponto...')
+    def baterPonto(self):
+      '''método para bater ponto do funcionário'''
+      print(f'Funcionário [bold white]{self.nome}[/] bateu o ponto...')
+    
+    def estudar(self):
+        print(f'{self.nome} se especializa para a área de {self.setor}')
